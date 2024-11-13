@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1583A02CE4F585009635AB /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15839F2CE4F585009635AB /* MovieListViewController.swift */; };
+		AE1583A22CE4F5C7009635AB /* MyMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1583A12CE4F5C7009635AB /* MyMovieList.swift */; };
+		AE1583AB2CE4F764009635AB /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1583AA2CE4F764009635AB /* TestService.swift */; };
+		AE1583B22CE4FE63009635AB /* SearchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1583B12CE4FE63009635AB /* SearchMovieViewController.swift */; };
+		AE1583B42CE50038009635AB /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1583B32CE50038009635AB /* Strings.swift */; };
+		AE19627E2CE3DA6400F88611 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19627D2CE3DA6400F88611 /* MovieTableViewCell.swift */; };
+		AE1962802CE3DB6900F88611 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19627F2CE3DB6900F88611 /* MovieCollectionViewCell.swift */; };
+		AE1962832CE3DCCE00F88611 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1962822CE3DCCE00F88611 /* MovieDetailsViewController.swift */; };
+		AE1962852CE3DE7000F88611 /* MovieRecoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1962842CE3DE7000F88611 /* MovieRecoViewController.swift */; };
+		AE1962872CE3DF4C00F88611 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1962862CE3DF4C00F88611 /* MovieInfoViewController.swift */; };
+		AE1962892CE3E18500F88611 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1962882CE3E18500F88611 /* UIView+Extension.swift */; };
+		AE19628C2CE3FD6E00F88611 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE19628B2CE3FD6E00F88611 /* TabBarViewController.swift */; };
+		AEBC76962CE2C08700CD790A /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC76952CE2C08700CD790A /* Movies.swift */; };
+		AEBC76982CE2C39E00CD790A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBC76972CE2C39E00CD790A /* APIConstants.swift */; };
+		AEBD5D102CDCDA6C00E3080A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBD5D0F2CDCDA6C00E3080A /* Service.swift */; };
+		AEDD23F52CDC20A3003E7A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD23F42CDC20A3003E7A45 /* AppDelegate.swift */; };
+		AEDD23F72CDC20A3003E7A45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD23F62CDC20A3003E7A45 /* SceneDelegate.swift */; };
+		AEDD23F92CDC20A3003E7A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDD23F82CDC20A3003E7A45 /* ViewController.swift */; };
+		AEDD23FF2CDC20A3003E7A45 /* the_globoplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEDD23FD2CDC20A3003E7A45 /* the_globoplay.xcdatamodeld */; };
+		AEDD24012CDC20A7003E7A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDD24002CDC20A7003E7A45 /* Assets.xcassets */; };
+		AEDD24042CDC20A7003E7A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEDD24022CDC20A7003E7A45 /* LaunchScreen.storyboard */; };
+		BAE1D9F95672288015D38FAD /* Pods_the_globoplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F46789D848E16ABC68FB67 /* Pods_the_globoplay.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE1583AC2CE4F764009635AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEDD23E92CDC20A3003E7A45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEDD23F02CDC20A3003E7A45;
+			remoteInfo = "the-globoplay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		91ACC4491D2080CDC412AA8A /* Pods-the-globoplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-globoplay.debug.xcconfig"; path = "Target Support Files/Pods-the-globoplay/Pods-the-globoplay.debug.xcconfig"; sourceTree = "<group>"; };
+		AE15839F2CE4F585009635AB /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		AE1583A12CE4F5C7009635AB /* MyMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieList.swift; sourceTree = "<group>"; };
+		AE1583A82CE4F764009635AB /* the-globoplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the-globoplayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1583AA2CE4F764009635AB /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		AE1583B12CE4FE63009635AB /* SearchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieViewController.swift; sourceTree = "<group>"; };
+		AE1583B32CE50038009635AB /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		AE19627D2CE3DA6400F88611 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		AE19627F2CE3DB6900F88611 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE1962822CE3DCCE00F88611 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		AE1962842CE3DE7000F88611 /* MovieRecoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRecoViewController.swift; sourceTree = "<group>"; };
+		AE1962862CE3DF4C00F88611 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
+		AE1962882CE3E18500F88611 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AE19628B2CE3FD6E00F88611 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AEBC76952CE2C08700CD790A /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		AEBC76972CE2C39E00CD790A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		AEBD5D0F2CDCDA6C00E3080A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AEDD23F12CDC20A3003E7A45 /* the-globoplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the-globoplay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDD23F42CDC20A3003E7A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEDD23F62CDC20A3003E7A45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AEDD23F82CDC20A3003E7A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEDD23FE2CDC20A3003E7A45 /* the_globoplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = the_globoplay.xcdatamodel; sourceTree = "<group>"; };
+		AEDD24002CDC20A7003E7A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEDD24032CDC20A7003E7A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEDD24052CDC20A7003E7A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F46789D848E16ABC68FB67 /* Pods_the_globoplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_the_globoplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E76B37C1E5E3C8128FD1A251 /* Pods-the-globoplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-the-globoplay.release.xcconfig"; path = "Target Support Files/Pods-the-globoplay/Pods-the-globoplay.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE1583A52CE4F764009635AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDD23EE2CDC20A3003E7A45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE1D9F95672288015D38FAD /* Pods_the_globoplay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE15839D2CE4EF56009635AB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD23F42CDC20A3003E7A45 /* AppDelegate.swift */,
+				AEDD23F62CDC20A3003E7A45 /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AE15839E2CE4EF6B009635AB /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD5D0E2CDCDA5300E3080A /* Cells */,
+				AE1962822CE3DCCE00F88611 /* MovieDetailsViewController.swift */,
+				AE15839F2CE4F585009635AB /* MovieListViewController.swift */,
+				AE1962862CE3DF4C00F88611 /* MovieInfoViewController.swift */,
+				AE1962842CE3DE7000F88611 /* MovieRecoViewController.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		AE1583A32CE4F637009635AB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AEBD5D0F2CDCDA6C00E3080A /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE1583A92CE4F764009635AB /* the-globoplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE1583AA2CE4F764009635AB /* TestService.swift */,
+			);
+			path = "the-globoplayTests";
+			sourceTree = "<group>";
+		};
+		AE1962812CE3DCB800F88611 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AE15839E2CE4EF6B009635AB /* Movie */,
+				AEDD23F82CDC20A3003E7A45 /* ViewController.swift */,
+				AE19628B2CE3FD6E00F88611 /* TabBarViewController.swift */,
+				AE1583B12CE4FE63009635AB /* SearchMovieViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AE19628A2CE3F43F00F88611 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE1962882CE3E18500F88611 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AEBD5D0D2CDCDA4D00E3080A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEBC76952CE2C08700CD790A /* Movies.swift */,
+				AEBC76972CE2C39E00CD790A /* APIConstants.swift */,
+				AE1583A12CE4F5C7009635AB /* MyMovieList.swift */,
+				AE1583B32CE50038009635AB /* Strings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEBD5D0E2CDCDA5300E3080A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AE19627D2CE3DA6400F88611 /* MovieTableViewCell.swift */,
+				AE19627F2CE3DB6900F88611 /* MovieCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AEDD23E82CDC20A3003E7A45 = {
+			isa = PBXGroup;
+			children = (
+				AEDD23F32CDC20A3003E7A45 /* the-globoplay */,
+				AE1583A92CE4F764009635AB /* the-globoplayTests */,
+				AEDD23F22CDC20A3003E7A45 /* Products */,
+				D5598FC109A02D067E7876C6 /* Pods */,
+				E217ACB785FA20B536BC6B67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDD23F22CDC20A3003E7A45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEDD23F12CDC20A3003E7A45 /* the-globoplay.app */,
+				AE1583A82CE4F764009635AB /* the-globoplayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEDD23F32CDC20A3003E7A45 /* the-globoplay */ = {
+			isa = PBXGroup;
+			children = (
+				AE15839D2CE4EF56009635AB /* Base */,
+				AE1583A32CE4F637009635AB /* Networking */,
+				AE19628A2CE3F43F00F88611 /* Extension */,
+				AE1962812CE3DCB800F88611 /* Scenes */,
+				AEBD5D0D2CDCDA4D00E3080A /* Model */,
+				AEDD24002CDC20A7003E7A45 /* Assets.xcassets */,
+				AEDD24022CDC20A7003E7A45 /* LaunchScreen.storyboard */,
+				AEDD24052CDC20A7003E7A45 /* Info.plist */,
+				AEDD23FD2CDC20A3003E7A45 /* the_globoplay.xcdatamodeld */,
+			);
+			path = "the-globoplay";
+			sourceTree = "<group>";
+		};
+		D5598FC109A02D067E7876C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91ACC4491D2080CDC412AA8A /* Pods-the-globoplay.debug.xcconfig */,
+				E76B37C1E5E3C8128FD1A251 /* Pods-the-globoplay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E217ACB785FA20B536BC6B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2F46789D848E16ABC68FB67 /* Pods_the_globoplay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE1583A72CE4F764009635AB /* the-globoplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1583AE2CE4F764009635AB /* Build configuration list for PBXNativeTarget "the-globoplayTests" */;
+			buildPhases = (
+				AE1583A42CE4F764009635AB /* Sources */,
+				AE1583A52CE4F764009635AB /* Frameworks */,
+				AE1583A62CE4F764009635AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1583AD2CE4F764009635AB /* PBXTargetDependency */,
+			);
+			name = "the-globoplayTests";
+			productName = "the-globoplayTests";
+			productReference = AE1583A82CE4F764009635AB /* the-globoplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEDD23F02CDC20A3003E7A45 /* the-globoplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDD24082CDC20A7003E7A45 /* Build configuration list for PBXNativeTarget "the-globoplay" */;
+			buildPhases = (
+				58F1118F5B61999279F61113 /* [CP] Check Pods Manifest.lock */,
+				AEDD23ED2CDC20A3003E7A45 /* Sources */,
+				AEDD23EE2CDC20A3003E7A45 /* Frameworks */,
+				AEDD23EF2CDC20A3003E7A45 /* Resources */,
+				E3FAA4344AF4C9AB2188980C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "the-globoplay";
+			productName = "the-globoplay";
+			productReference = AEDD23F12CDC20A3003E7A45 /* the-globoplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDD23E92CDC20A3003E7A45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE1583A72CE4F764009635AB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AEDD23F02CDC20A3003E7A45;
+					};
+					AEDD23F02CDC20A3003E7A45 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = AEDD23EC2CDC20A3003E7A45 /* Build configuration list for PBXProject "the-globoplay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDD23E82CDC20A3003E7A45;
+			productRefGroup = AEDD23F22CDC20A3003E7A45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEDD23F02CDC20A3003E7A45 /* the-globoplay */,
+				AE1583A72CE4F764009635AB /* the-globoplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE1583A62CE4F764009635AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDD23EF2CDC20A3003E7A45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDD24042CDC20A7003E7A45 /* LaunchScreen.storyboard in Resources */,
+				AEDD24012CDC20A7003E7A45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58F1118F5B61999279F61113 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-the-globoplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FAA4344AF4C9AB2188980C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-globoplay/Pods-the-globoplay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-the-globoplay/Pods-the-globoplay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-the-globoplay/Pods-the-globoplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE1583A42CE4F764009635AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1583AB2CE4F764009635AB /* TestService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDD23ED2CDC20A3003E7A45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1962832CE3DCCE00F88611 /* MovieDetailsViewController.swift in Sources */,
+				AE1962892CE3E18500F88611 /* UIView+Extension.swift in Sources */,
+				AEDD23F92CDC20A3003E7A45 /* ViewController.swift in Sources */,
+				AE1962852CE3DE7000F88611 /* MovieRecoViewController.swift in Sources */,
+				AE19628C2CE3FD6E00F88611 /* TabBarViewController.swift in Sources */,
+				AEBC76982CE2C39E00CD790A /* APIConstants.swift in Sources */,
+				AEDD23F52CDC20A3003E7A45 /* AppDelegate.swift in Sources */,
+				AEBC76962CE2C08700CD790A /* Movies.swift in Sources */,
+				AEBD5D102CDCDA6C00E3080A /* Service.swift in Sources */,
+				AE1583A02CE4F585009635AB /* MovieListViewController.swift in Sources */,
+				AE1583B42CE50038009635AB /* Strings.swift in Sources */,
+				AE1583B22CE4FE63009635AB /* SearchMovieViewController.swift in Sources */,
+				AEDD23F72CDC20A3003E7A45 /* SceneDelegate.swift in Sources */,
+				AE1962802CE3DB6900F88611 /* MovieCollectionViewCell.swift in Sources */,
+				AE19627E2CE3DA6400F88611 /* MovieTableViewCell.swift in Sources */,
+				AEDD23FF2CDC20A3003E7A45 /* the_globoplay.xcdatamodeld in Sources */,
+				AE1962872CE3DF4C00F88611 /* MovieInfoViewController.swift in Sources */,
+				AE1583A22CE4F5C7009635AB /* MyMovieList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE1583AD2CE4F764009635AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEDD23F02CDC20A3003E7A45 /* the-globoplay */;
+			targetProxy = AE1583AC2CE4F764009635AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEDD24022CDC20A7003E7A45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEDD24032CDC20A7003E7A45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE1583AF2CE4F764009635AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "leticiasantos.the-globoplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-globoplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/the-globoplay";
+			};
+			name = Debug;
+		};
+		AE1583B02CE4F764009635AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "leticiasantos.the-globoplayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the-globoplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/the-globoplay";
+			};
+			name = Release;
+		};
+		AEDD24062CDC20A7003E7A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AEDD24072CDC20A7003E7A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEDD24092CDC20A7003E7A45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91ACC4491D2080CDC412AA8A /* Pods-the-globoplay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "the-globoplay/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "leticiasantos.the-globoplay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEDD240A2CDC20A7003E7A45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E76B37C1E5E3C8128FD1A251 /* Pods-the-globoplay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "the-globoplay/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "leticiasantos.the-globoplay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE1583AE2CE4F764009635AB /* Build configuration list for PBXNativeTarget "the-globoplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1583AF2CE4F764009635AB /* Debug */,
+				AE1583B02CE4F764009635AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDD23EC2CDC20A3003E7A45 /* Build configuration list for PBXProject "the-globoplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDD24062CDC20A7003E7A45 /* Debug */,
+				AEDD24072CDC20A7003E7A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDD24082CDC20A7003E7A45 /* Build configuration list for PBXNativeTarget "the-globoplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDD24092CDC20A7003E7A45 /* Debug */,
+				AEDD240A2CDC20A7003E7A45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEDD23FD2CDC20A3003E7A45 /* the_globoplay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEDD23FE2CDC20A3003E7A45 /* the_globoplay.xcdatamodel */,
+			);
+			currentVersion = AEDD23FE2CDC20A3003E7A45 /* the_globoplay.xcdatamodel */;
+			path = the_globoplay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEDD23E92CDC20A3003E7A45 /* Project object */;
+}
