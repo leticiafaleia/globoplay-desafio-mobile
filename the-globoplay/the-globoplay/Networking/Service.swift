@@ -6,11 +6,8 @@
 //
 
 import Foundation
-import Alamofire
 
 struct Service {
-    
-    
     func getMoviesByName(name: String, completion: @escaping (Root) -> Void) {
         let movieName = String(name)
         let searchURL = "https://api.themoviedb.org/3/search/keyword"
@@ -40,19 +37,15 @@ struct Service {
         let withGenre = String(with_genre)
         
         guard let url = URL(string: APIConstants.apiBaseUrl + APIConstants.byDiscover + APIConstants.apiKey + APIConstants.language + APIConstants.byPopularity + APIConstants.page + withGenre) else { return }
-        
-        
+    
         URLSession.shared.dataTask(with: url) {data, response, error in
-            
             if error == nil {
                 guard let data = data else { return }
-                
                 do {
                     let moviesData:Root = try JSONDecoder().decode(Root.self, from: data)
                     DispatchQueue.main.async {
                         completion(moviesData)
                     }
-                   
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -62,10 +55,7 @@ struct Service {
         }.resume()
     }
     
-    
-    // MARK: RECUPERAR ARRAY DE GENEROS
     func getMoviesGenresRequest (completion: @escaping(Genres) -> Void) {
-        
         guard let url = URL(string: APIConstants.apiBaseUrl + APIConstants.genrePath + APIConstants.apiKey + APIConstants.language) else { return }
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             
@@ -86,18 +76,14 @@ struct Service {
         }.resume()
         
     }
-    
-    //MARK: RECUPERAR DETALHES DE UM FILME
-    func getMovieDetails(movieId: Int, completion: @escaping (MovieDetail) -> Void) {
+        func getMovieDetails(movieId: Int, completion: @escaping (MovieDetail) -> Void) {
         let id = String(movieId)
-        
 
         guard let url = URL(string: APIConstants.apiBaseUrl + APIConstants.byMovie + id + APIConstants.apiKey + APIConstants.language) else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if error == nil {
                 guard let data = data else { return }
-                
                 do {
                     let movieDetail = try JSONDecoder().decode(MovieDetail.self, from: data)
                     DispatchQueue.main.async {
@@ -109,18 +95,14 @@ struct Service {
             } else {
                 print(error!.localizedDescription)
             }
-            
         }.resume()
     }
     
-    
-    // MARK: RECUPERAR RECOMENDACOES PARA UM FILME
     func getRecommendations(movieID: Int, completion: @escaping(Root) -> Void) {
         let movieID = String(movieID)
         
         guard let url = URL(string: APIConstants.apiBaseUrl + APIConstants.byMovie + movieID + APIConstants.byRecommendations + APIConstants.apiKey + APIConstants.language) else { return }
     
-       
         URLSession.shared.dataTask(with: url) { data, response, error in
             
             if error == nil {
@@ -131,20 +113,15 @@ struct Service {
                     DispatchQueue.main.async {
                         completion(recommendations)
                     }
-                    
                 } catch {
                     print(error.localizedDescription)
                 }
             } else {
                 print(error!.localizedDescription)
             }
-            
         }.resume()
-        
     }
     
-    
-    // MARK: ADICIONAR FILMES A LISTA
     func addMovieToList(movieId: Int, completion: @escaping(Int) -> Void) {
         guard let url = URL(string: "https://api.themoviedb.org/4/list/8173428/items") else { return }
         var request = URLRequest(url: url)
@@ -160,26 +137,19 @@ struct Service {
             request.httpBody = try JSONEncoder().encode(jsonObject)
             
             URLSession.shared.dataTask(with: request) { data, response, error in
-              
                 let res = response as? HTTPURLResponse
-                    
                 DispatchQueue.main.async {
-                    
                     if(error == nil) {
                         completion(res!.statusCode)
                     } else {
                         completion(440)
                     }
-                    
                 }
-                    
-               
             }.resume()
             
         } catch {
             print(error.localizedDescription)
         }
-          
     }
     
     func getUserList(completion: @escaping(Mylist) -> Void) {
@@ -202,7 +172,6 @@ struct Service {
                     DispatchQueue.main.async {
                         completion(myList)
                     }
-
                 } catch  {
                     print(error.localizedDescription)
                 }
@@ -210,6 +179,5 @@ struct Service {
                 print(error!.localizedDescription)
             }
         }.resume()
-
     }
 }
