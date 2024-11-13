@@ -31,7 +31,5 @@ class SearchMovieViewController: UIViewController {
 
         }
         
-        
     }
-    
 }

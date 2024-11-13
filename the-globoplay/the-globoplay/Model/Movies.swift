@@ -45,7 +45,6 @@ struct MovieDetail: Decodable {
     let release_date: String
     let runtime: Int
     let status, tagline, title: String
-
 }
 
 struct ProductionCountry: Decodable {

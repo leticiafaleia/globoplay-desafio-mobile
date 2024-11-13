@@ -36,7 +36,5 @@ class TabBarViewController: UITabBarController {
         items.first?.image = UIImage(systemName: "house.fill")
         items.last?.image = UIImage(systemName: "star.fill")
 //        items.first?.image = UIImage(systemName: "search.fill")
-        
     }
-
 }

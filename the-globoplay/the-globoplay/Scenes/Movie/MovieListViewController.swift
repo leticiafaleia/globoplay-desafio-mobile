@@ -26,8 +26,7 @@ class MovieListViewController: UIViewController {
     
     
     private func setupNavBar () {
-        
-        
+    
         navigationItem.title = "Minha lista"
         
         let titleBarAttibutes = [NSAttributedString.Key.foregroundColor: UIColor.white,
@@ -38,9 +37,7 @@ class MovieListViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = .black
-        
     }
-
     
     private func setupCollection () {
         let Layout = UICollectionViewFlowLayout()
@@ -83,9 +80,5 @@ extension MovieListViewController: UICollectionViewDelegate, UICollectionViewDat
         
         self.present(MovieDetailsViewController(movieId: movieId), animated: true, completion: nil)
         self.modalPresentationStyle = .fullScreen
-        
-        
     }
-    
-    
 }

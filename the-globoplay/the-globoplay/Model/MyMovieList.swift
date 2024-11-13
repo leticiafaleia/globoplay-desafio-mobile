@@ -17,6 +17,6 @@ struct CreatedBy {
 }
 
 struct ListMovie: Decodable {
-      let id: Int
-      let poster_path: String
+    let id: Int
+    let poster_path: String
 }

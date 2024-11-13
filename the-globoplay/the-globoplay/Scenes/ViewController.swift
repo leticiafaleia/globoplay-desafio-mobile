@@ -7,9 +7,7 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
-    
     
     private var request = Service()
     var genres = [] as [Genre]
